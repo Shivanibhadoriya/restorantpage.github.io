@@ -1,0 +1,297 @@
+*{
+   box-sizing:border-box;
+   margin:0px;
+  padding:0px;
+}
+html,body{
+   line-height:1.4;
+   font-weight:300px;    
+   font-family:"roboto",sans-serif;
+}
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+ .container{
+  max-width:1200px;
+  margin:0 auto;
+ }   
+nav{
+      box-shadow: 5px 5px 5px rgb(1,1,1,0.05);
+      position:sticky;
+      top:0;
+      margin-bottom:32px;
+      background:white;
+      padding:10px;
+      z-index:50;
+}
+.bar_icon{
+         font-size:24px;
+}
+    
+.layout{
+    display:flex;
+     gap:100px;
+     justify-content:center;
+     align-items:center;
+}
+
+
+.screen{
+  display:flex;
+  flex-direction:column;
+  
+  
+}
+
+
+.discount{
+ background-color:rgb(26, 187, 26);
+ padding:5px 10px;
+ align-self:flex-start;
+ color:white;
+ 
+}
+.feature h1{
+    line-height:1.2;
+    font-size: 72px;
+    font-weight:400px;
+  }
+ button{
+   padding:10px 15px;
+  transition:0.2s ease-in-out;
+  border:none;
+   }
+    button:hover{
+      opacity:0.8;
+      transition:0.2s ease-in-out;
+    }
+    .explore-btn{
+      background:#ffc066;
+ align-self:flex-start;
+
+    }
+ .explore{
+   margin-top:100px;
+   display:flex;
+   gap:20px;
+   justify-content:center;
+   margin-bottom:50px;
+   padding:20px;
+   
+}
+.box{
+  display:flex;
+  gap:20px;
+  padding:20px;
+  transition:0.2s ease-in-out;
+}
+.box img{
+  width:72px;
+}
+.box:hover{
+  transition:0.2s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(37, 33, 33, 0.05);
+
+}
+.divider{
+  border:1px solid rgb(112, 112, 170);
+  margin:20px 0;
+}
+ #explore_content{
+   font-family:sans-serif;
+ }
+ 
+ .menu{
+   display:flex;
+   flex-direction:column;
+   gap:50px;
+   margin:50px 0;
+   align-items:center;
+
+ }
+ .menu .discount{
+  align-self:center;
+ }
+ .photos{
+  display:grid;
+  gap:10px;
+  padding:10px;
+  grid-template-areas:
+  "I1 I2 I3 I4"
+  "I5 I6 I7 I8"
+  "I9 I10 I11 I12"
+  "I13 I14 I15 I17"
+  "I18 I19 I20 I21"
+  "I22 I23 I24 I25"
+  "I27 I28 I29 I30"
+  ;
+ }
+ .image1{
+   grid-area:I1;
+ }
+ .image2{
+   grid-area:I2;
+ }
+ .image3{
+   grid-area:I3;
+ }
+ .image4{
+   grid-area:I4;
+ }
+ .image5{
+   grid-area:I5;
+  }
+  .image6{
+   grid-area:I6;
+ }
+ .image7{
+   grid-area:I7;
+ }
+ .image8{
+   grid-area:I8;
+ }
+ .image9{
+   grid-area:I9;
+ }
+ .image10{
+   grid-area:I10;
+ }
+ .image11{
+   grid-area:I11;
+ }
+ .image12{
+   grid-area:I12;
+ }
+ .image13{
+   grid-area:I13;
+ }
+ .image14{
+   grid-area:I14;
+ }
+ .image17{
+   grid-area:I17;
+ }
+ .image18{
+   grid-area:I18;
+ }
+ .image19{
+   grid-area:I19;
+ }
+ .image20{
+   grid-area:I20;
+ }
+ .image21{
+   grid-area:I21;
+ }
+ .image22{
+   grid-area:I22;
+ }
+ .image23{
+   grid-area:I23;
+ }
+ .image24{
+   grid-area:I24;
+ }
+ .image25{
+   grid-area:I25;
+ }
+ 
+ .image27{
+   grid-area:I27;
+ }
+ .image28{
+   grid-area:I28;
+ }
+ .image29{
+   grid-area:I29;
+ }
+ .image30{
+   grid-area:I30;
+ }
+ .image_grid{
+   width:380px;
+  height:300px;
+  width:100%;
+  height:100%;
+  border-radius:0px;
+  transition:0.2s ease-in-out;
+ }
+ .image_grid:hover{
+  transform:scale(1.05);
+  transition:0.2s ease-in-out;
+ 
+}
+ 
+ .image_grid{
+  border-radius:0px;
+ }
+ 
+ footer{
+    background-color:rgb(255, 254, 170);
+ }
+
+ .link_list h3{
+       margin-bottom:10px;
+       color:gray;
+      }
+ .link_list ul{
+  list-style:none;
+ }
+ .link_list ul li{
+  font-size:16px;
+  margin-bottom:5px;
+ }
+
+ .news_letter h3{
+       margin-bottom:10px;
+       color:gray;
+      }
+ .news_letter input{
+  padding:5px 40px;
+  margin-bottom:10px;
+}
+.icon_container{
+  display:flex;
+  gap:15px;
+  font-size:32px;
+}
+.footer_container{
+  padding:30px;
+  display:flex;
+  justify-content:space-between;
+ }
+ .icon{
+  display:flex;
+  flex;
+ }
+   @media screen and(max-width:786px),screen and (orientation:portrait)
+   {
+       .layout{
+           flex-direction:column;
+           }
+           .screen{
+             display:flex;
+             justify-content:center;
+           }
+           .screen img{
+             width:80%;
+             height:80%;
+           }
+           .feature{
+             gap:10px;
+             padding:10px;
+           }
+           .feature h1{
+             font-size:32px;
+           }
+           .explore{
+            display:flex;
+            flex-direction:column;
+         }
+         .footer_container{
+           display:flex;
+           flex-direction:column;
+         }
+     }
